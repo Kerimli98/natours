@@ -1,0 +1,37 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url("../../../../public/assets/img/hero-min.jpg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+  position: relative;
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 94vh, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 94vh, 0 100%);
+  }
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    cursor: pointer;
+  }
+  &__logo {
+    height: 3.7rem;
+  }
+  &__logo-box:hover {
+    animation: logoAnimation 2.2s ease-in infinite;
+  }
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
