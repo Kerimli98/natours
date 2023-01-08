@@ -1,6 +1,6 @@
 # Tour Booking App (UI) - Natours
 
-## Feature
+## Features
 
 - Responsive Design
 - Modern and nice animations
